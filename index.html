@@ -126,6 +126,15 @@
     letter-spacing:0.03em;
   }
   .brand em{ font-style:italic; color:var(--emerald); }
+  .brand-group{ display:flex; flex-direction:column; gap:1px; }
+  .brand-location{
+    font-family:'Inter', sans-serif;
+    font-size:0.66rem;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--slate);
+    opacity:0.75;
+  }
   .nav-links{
     display:flex;
     gap:36px;
@@ -436,7 +445,10 @@
 
 <header>
   <nav class="wrap">
-    <div class="brand">Catharos <em>Russian Blues</em></div>
+    <div class="brand-group">
+      <div class="brand">Catharos <em>Russian Blues</em></div>
+      <div class="brand-location">Dundee, Scotland</div>
+    </div>
     <ul class="nav-links">
       <li><a href="#about">Our Story</a></li>
       <li><a href="#cats">Our Litters</a></li>
